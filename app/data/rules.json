@@ -1,0 +1,46 @@
+[
+  {
+      "id": "1",
+      "name":"Range",
+      "code":"RNG",
+      "description":"This Rules define a list of ranges for each Products and manage the values of quantity and discount of each row of the order.",
+      "parameters":[
+        {
+          "id": "1",
+          "code": "PROD",
+          "type": "TEXT",
+          "description": "Product Form."
+        },
+        {
+          "id": "2",
+          "code": "QTY_MIN",
+          "type": "NUM",
+          "description": "Minimun Qty."
+        },
+        {
+          "id": "3",
+          "code": "QTY_MAX",
+          "type": "NUM",
+          "description": "Maximun Qty."
+        },
+        {
+          "id": "4",
+          "code": "DISC_MIN",
+          "type": "NUM",
+          "description": "Minimun Disc."
+        },
+        {
+          "id": "5",
+          "code": "DISC_MAX",
+          "type": "NUM",
+          "description": "Maximum Disc."
+        }
+      ]
+  },
+  {
+      "id": "2",
+      "name":"Package",
+      "code":"PKG",
+      "description":"This Rules define a list of Package."
+  }
+]

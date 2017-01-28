@@ -1,0 +1,16 @@
+<div>
+  <md-content class="md-padding">
+    <h3 class="md-toolbar-tools">List of Rules:</h3>
+    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links" >
+      <md-nav-item
+            ng-repeat="rule in rules"
+            ui-sref=      "rules.ruleCard({ruleId: rule.id})"
+            md-nav-click= "rules.ruleCard({ruleId: rule.id})"
+            name="{{rule.name}}"
+            id="{{rule.id}}">
+        {{rule.name}}
+      </md-nav-item>
+    </md-nav-bar>
+  </md-content>
+  <ui-view></ui-view>
+</div>
