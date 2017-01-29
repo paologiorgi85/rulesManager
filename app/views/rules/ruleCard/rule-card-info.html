@@ -1,2 +1,41 @@
+<mdt-table mdt-row="{
+                    data: rows,
+                    'column-keys': [
+                        'row',
+                        'PROD_FORM_CODE',
+                        'QTY_MIN',
+                        'QTY_MAX',
+                        'DISC_MIN',
+                        'DISC_MAX'
+                    ]
+                    }">
+  <mdt-header-row>
+    <mdt-column align-rule="left">Product Form.</mdt-column>
+    <mdt-column align-rule="right">Minimun Qty.</mdt-column>
+    <mdt-column align-rule="right">Maximun Qty.</mdt-column>
+    <mdt-column align-rule="right">Minimun Disc.</mdt-column>
+    <mdt-column align-rule="right">Maximum Disc.</mdt-column>
+  </mdt-header-row>
+</mdt-table>
 
-Project name: {{rule.name}}
+
+
+<div layout="column" flex layout-fill ng-cloak>
+  <md-content style="height: 600px;" md-theme="altTheme">
+    <section>
+      <md-subheader class="md-primary">Parameter List:</md-subheader>
+      <md-list layout-padding>
+        <md-list-item class="md-3-line" ng-repeat="param in rule.parameters">
+            <div class="md-list-item-text">
+              <h4>Param Code: {{param.code}}</h4>
+              <h3>Type: {{param.type}}</h3>
+              <p>
+                Description: {{param.description}}
+              </p>
+            </div>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-list-item>
+      </md-list>
+    </section>
+  </md-content>
+</div>

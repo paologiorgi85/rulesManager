@@ -1,44 +1,62 @@
 [
   {
-      "id": "1",
+      "id": 1,
       "name":"Range",
       "code":"RNG",
       "description":"This Rules define a list of ranges for each Products and manage the values of quantity and discount of each row of the order.",
       "parameters":[
         {
-          "id": "1",
-          "code": "PROD",
+          "id": 1,
+          "code": "PROD_FORM_CODE",
           "type": "TEXT",
           "description": "Product Form."
         },
         {
-          "id": "2",
+          "id": 2,
           "code": "QTY_MIN",
           "type": "NUM",
           "description": "Minimun Qty."
         },
         {
-          "id": "3",
+          "id": 3,
           "code": "QTY_MAX",
           "type": "NUM",
           "description": "Maximun Qty."
         },
         {
-          "id": "4",
+          "id": 4,
           "code": "DISC_MIN",
           "type": "NUM",
           "description": "Minimun Disc."
         },
         {
-          "id": "5",
+          "id": 5,
           "code": "DISC_MAX",
           "type": "NUM",
           "description": "Maximum Disc."
         }
+      ],
+      "rows": [
+        {
+          "row": 1,
+          "PROD_FORM_CODE": "Fastum gel 50 ml",
+          "QTY_MIN": 0,
+          "QTY_MAX": 10,
+          "DISC_MIN": 0,
+          "DISC_MAX": 2
+        },
+        {
+          "row": 2,
+          "PROD_FORM_CODE": "Fastum gel 50 ml",
+          "QTY_MIN": 11,
+          "QTY_MAX": 30,
+          "DISC_MIN": 0,
+          "DISC_MAX": 6
+        }
       ]
   },
   {
-      "id": "2",
+      "id": 2,
       "name":"Package",
       "code":"PKG",
       "description":"This Rules define a list of Package."

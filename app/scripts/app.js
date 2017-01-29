@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 var myApp = angular.module('ruleManger', [
-    'ui.router','ngMaterial',
+    'ui.router','ngMaterial','md.data.table',
     'ngAnimate', 'ngCookies', 'ngResource', 'ngSanitize', 'ngMessages',
 ]);
 

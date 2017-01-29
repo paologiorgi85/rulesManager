@@ -5,7 +5,7 @@ myApp.controller('ruleManagerCtrl',['RuleService','$scope','rules',
   }
 ]);
 
-myApp.controller('ruleCardCtrl', ['RuleService', '$scope', '$http','$stateParams', '$state', function(RuleService, $scope, $http, $stateParams, $state) {
+myApp.controller('ruleCardCtrl', ['RuleService', '$scope', '$http','$stateParams', '$state', function(RuleService, $scope, $http, $stateParams, $state, $mdToast) {
   console.log("Into the ruleCardCtrl");
   return $http.get('data/rules.json', { cache: true }).then(function(res) {
     for(var i=0;i<res.data.length;i++) {
