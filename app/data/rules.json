@@ -52,6 +52,38 @@
           "QTY_MAX": 30,
           "DISC_MIN": 0,
           "DISC_MAX": 6
+        },
+        {
+          "row": 3,
+          "PROD_FORM_CODE": "Fastum gel 50 ml",
+          "QTY_MIN": 31,
+          "QTY_MAX": 100,
+          "DISC_MIN": 0,
+          "DISC_MAX": 10
+        },
+        {
+          "row": 4,
+          "PROD_FORM_CODE": "Enantyum 25 ml",
+          "QTY_MIN": 0,
+          "QTY_MAX": 50,
+          "DISC_MIN": 0,
+          "DISC_MAX": 5
+        },
+        {
+          "row": 5,
+          "PROD_FORM_CODE": "Enantyum 25 ml",
+          "QTY_MIN": 51,
+          "QTY_MAX": 100,
+          "DISC_MIN": 0,
+          "DISC_MAX": 10
+        },
+        {
+          "row": 6,
+          "PROD_FORM_CODE": "Enantyum 25 ml",
+          "QTY_MIN": 101,
+          "QTY_MAX": 500,
+          "DISC_MIN": 0,
+          "DISC_MAX": 15
         }
       ]
   },
