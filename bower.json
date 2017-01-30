@@ -12,7 +12,7 @@
     "angular-dragula": "^1.2.8",
     "material-design-icons": "^3.0.1",
     "angular-ui-router": "^0.3.2",
-    "angular-material-data-table": "^0.10.10"
+    "md-data-table": "^2.2.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

@@ -1,25 +1,31 @@
-<mdt-table mdt-row="{
-                    data: rows,
-                    'column-keys': [
-                        'row',
-                        'PROD_FORM_CODE',
-                        'QTY_MIN',
-                        'QTY_MAX',
-                        'DISC_MIN',
-                        'DISC_MAX'
-                    ]
-                    }">
-  <mdt-header-row>
-    <mdt-column align-rule="left">Product Form.</mdt-column>
-    <mdt-column align-rule="right">Minimun Qty.</mdt-column>
-    <mdt-column align-rule="right">Maximun Qty.</mdt-column>
-    <mdt-column align-rule="right">Minimun Disc.</mdt-column>
-    <mdt-column align-rule="right">Maximum Disc.</mdt-column>
-  </mdt-header-row>
-</mdt-table>
+
+<div>
+  <mdt-table
+    selectable-rows="true"
+    mdt-row="{
+                      data: rule.rows,
+                      'column-keys': [
+                          'row',
+                          'PROD_FORM_CODE',
+                          'QTY_MIN',
+                          'QTY_MAX',
+                          'DISC_MIN',
+                          'DISC_MAX'
+                      ]
+                      }">
+    <mdt-header-row>
+      <mdt-column align-rule="left">Row num.</mdt-column>
+      <mdt-column align-rule="left">Product Form.</mdt-column>
+      <mdt-column align-rule="right">Minimun Qty.</mdt-column>
+      <mdt-column align-rule="right">Maximun Qty.</mdt-column>
+      <mdt-column align-rule="right">Minimun Disc.</mdt-column>
+      <mdt-column align-rule="right">Maximum Disc.</mdt-column>
+    </mdt-header-row>
+  </mdt-table>
+</div>
 
 
-
+<!--
 <div layout="column" flex layout-fill ng-cloak>
   <md-content style="height: 600px;" md-theme="altTheme">
     <section>
@@ -39,3 +45,4 @@
     </section>
   </md-content>
 </div>
+-->
