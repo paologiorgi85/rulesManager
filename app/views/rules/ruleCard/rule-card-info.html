@@ -10,7 +10,11 @@
     </div>
   </md-card>
   <mdt-table
-    table-card="{visible: true, title: rule.name,columnSelector: true}"
+    table-card="{
+                  visible:        true,
+                  title:          rule.name,
+                  columnSelector: true
+                }"
     selectable-rows="true"
     animate-sort-icon="true"
     mdt-row="{
@@ -25,13 +29,37 @@
                       ]
                       }">
     <mdt-header-row>
-      <mdt-column align-rule="right" column-sort="true">Row num.</mdt-column>
-      <mdt-column align-rule="left" column-sort="true">Product Form.</mdt-column>
-      <mdt-column align-rule="right" column-sort="true">Minimun Qty.</mdt-column>
-      <mdt-column align-rule="right" column-sort="true">Maximun Qty.</mdt-column>
-      <mdt-column align-rule="right" column-sort="true">Minimun Disc.</mdt-column>
-      <mdt-column align-rule="right" column-sort="true">Maximum Disc.</mdt-column>
+      <mdt-column align-rule="right" column-sort="true">  Row num.</mdt-column>
+      <mdt-column align-rule="left"  column-sort="true">  Product Form.</mdt-column>
+      <mdt-column align-rule="right" column-sort="true">  Minimun Qty.</mdt-column>
+      <mdt-column align-rule="right" column-sort="true">  Maximun Qty.</mdt-column>
+      <mdt-column align-rule="right" column-sort="true">  Minimun Disc.</mdt-column>
+      <mdt-column align-rule="right" column-sort="true">  Maximum Disc.</mdt-column>
     </mdt-header-row>
+
+    <mdt-custom-cell column-key="PROD_FORM_CODE">
+<!--      <md-input-container>
+        <md-select ng-model="rule.PROD_FORM_CODE">
+          <md-option><em>None</em></md-option>
+
+            <md-option ng-repeat="prod in rule.PROD_FORM_CODE" ng-value="prod.id">
+                {{prod.description}}
+              </md-option>
+
+          <md-option>Fastum gel 50 ml</md-option>
+          <md-option>Enantyum 25 ml</md-option>
+        </md-select>
+      </md-input-container>
+-->
+
+      <select>
+        <option value="" selected disabled>Select an product</option>
+        <!--option ng-repeat="prod in rule.PROD_FORM_CODE" ng-value="prod.id">{{prod.description}}</option-->
+        <option value="2">Fastum gel 50 ml</option>
+        <option value="2">Enantyum 25 ml</option>
+      </select>
+    </mdt-custom-cell>
+
   </mdt-table>
 </div>
 

@@ -36,6 +36,16 @@
           "description": "Maximum Disc."
         }
       ],
+      "PROD_FORM_CODE":[
+        {
+          "id": 1,
+          "description": "Fastum gel 50 ml"
+        },
+        {
+          "id": 2,
+          "description": "Enantyum 25 ml"
+        }
+      ],
       "rows": [
         {
           "row": 1,
