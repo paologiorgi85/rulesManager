@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 var myApp = angular.module('ruleManger', [
-    'ui.router','ngMaterial','mdDataTable',
+    'ui.router','ngMaterial','mdDataTable','md.data.table',
     'ngAnimate', 'ngCookies', 'ngResource', 'ngSanitize', 'ngMessages',
 ]);
 
@@ -60,7 +60,11 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         },
         'ruleInfo@rules.ruleCard': {
           controller: 'ruleCardCtrl',
-          templateUrl: 'views/rules/ruleCard/rule-card-info.html'
+          /*
+            templateUrl: 'views/rules/ruleCard/rule-card-info.html'
+          */
+            templateUrl: 'views/rules/ruleCard/rule-card-info-with-md-table.html'
+
         }
       }
     }

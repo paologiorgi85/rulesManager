@@ -5,6 +5,16 @@
         <label>Filter values</label>
         <input type="text" ng-model="filterName">
     </md-input-container>
+
+    <div ng-hide="true">
+      {{(PROD_FORM_CODEfff = (rule.PROD_FORM_CODE ))}}
+    </div>
+
+    <select>
+      <option value="" selected disabled>Select an product</option>
+      <option ng-repeat="prod in rule.PROD_FORM_CODE" ng-value="prod.id">{{prod.description}}</option>
+    </select>
+
     <div ng-hide="true">
       {{(filteredItems = (rule.rows | filter: filterName))}}
     </div>
@@ -21,6 +31,7 @@
                       data: filteredItems,
                       'column-keys': [
                           'row',
+                          'PROD_FORM_CODE_PK',
                           'PROD_FORM_CODE',
                           'QTY_MIN',
                           'QTY_MAX',
@@ -30,6 +41,7 @@
                       }">
     <mdt-header-row>
       <mdt-column align-rule="right" column-sort="true">  Row num.</mdt-column>
+      <mdt-column align-rule="left"  column-sort="true">  Product Form. PK</mdt-column>
       <mdt-column align-rule="left"  column-sort="true">  Product Form.</mdt-column>
       <mdt-column align-rule="right" column-sort="true">  Minimun Qty.</mdt-column>
       <mdt-column align-rule="right" column-sort="true">  Maximun Qty.</mdt-column>
@@ -54,9 +66,7 @@
 
       <select>
         <option value="" selected disabled>Select an product</option>
-        <!--option ng-repeat="prod in rule.PROD_FORM_CODE" ng-value="prod.id">{{prod.description}}</option-->
-        <option value="2">Fastum gel 50 ml</option>
-        <option value="2">Enantyum 25 ml</option>
+        <option ng-repeat="prod in rule.PROD_FORM_CODE" ng-value="prod.id">{{prod.description}}</option>
       </select>
     </mdt-custom-cell>
 
