@@ -1,9 +1,9 @@
 <div layout="column" flex layout-fill ng-cloak>
   <md-content style="width:400px; height: 400px;" md-theme="altTheme">
     <section>
-      <md-subheader class="md-primary">Parameter List:</md-subheader>
+      <md-subheader class="md-primary">Column Description:</md-subheader>
       <md-list layout-padding>
-        <md-list-item class="md-3-line" ng-repeat="param in rule.parameters">
+        <md-list-item class="md-3-line" ng-repeat="param in rule.columns">
             <div class="md-list-item-text">
               <h4>Param Code: {{param.code}}</h4>
               <h3>Type: {{param.type}}</h3>

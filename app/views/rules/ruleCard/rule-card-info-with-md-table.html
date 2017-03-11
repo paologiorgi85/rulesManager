@@ -10,15 +10,17 @@
     <table md-table>
       <thead md-head>
         <tr md-row>
-          <th md-column><span>Row num.</span></th>
-          <th md-column>                 <span>Producut Form</span></th>
-          <th md-column>                 <span>Minimun Qty.</span></th>
-          <th md-column>                 <span>Maximun Qty.</span></th>
-          <th md-column>                 <span>Minimun Disc.</span></th>
-          <th md-column>                 <span>Maximum Disc.</span></th>
+          <th md-column ng-repeat="column in rule.columns">
+            <span>{{column.description}}</span>
+          </th>
         </tr>
       </thead>
-    <tbody md-body>
+
+
+<!--
+  Rows for RANGE
+-->
+    <tbody md-body ng-show="rule.ruleCode=='RNG'">
       <tr md-row md-select="canvass" md-select-id="canvass.row" md-auto-select ng-repeat="canvass in rule.rows">
         <td md-cell>{{canvass.row}}</td>
         <td md-cell>
@@ -32,18 +34,15 @@
         <td md-cell>{{canvass.DISC_MAX}}</td>
       </tr>
       </tbody>
+<!--
+  OTHER Canvass Here ...
+-->
     </table>
   </md-table-container>
 </div>
 
-
-
-
-
-
-
 <div>
   <md-button class="md-primary md-raised" ng-click="showAdvanced()">
-    List of parameters
+    List of Columns
   </md-button>
 </div>
