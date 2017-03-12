@@ -55,7 +55,7 @@
       ],
       "rows": [
         {
-          "row": 1,
+          "ROW": 1,
           "PROD_FORM_CODE_PK": 1,
           "QTY_MIN": 0,
           "QTY_MAX": 10,
@@ -63,7 +63,7 @@
           "DISC_MAX": 2
         },
         {
-          "row": 2,
+          "ROW": 2,
           "PROD_FORM_CODE_PK": 1,
           "QTY_MIN": 11,
           "QTY_MAX": 30,
@@ -71,7 +71,7 @@
           "DISC_MAX": 6
         },
         {
-          "row": 3,
+          "ROW": 3,
           "PROD_FORM_CODE_PK": 1,
           "QTY_MIN": 31,
           "QTY_MAX": 100,
@@ -79,7 +79,7 @@
           "DISC_MAX": 10
         },
         {
-          "row": 4,
+          "ROW": 4,
           "PROD_FORM_CODE_PK": 2,
           "QTY_MIN": 0,
           "QTY_MAX": 50,
@@ -87,7 +87,7 @@
           "DISC_MAX": 5
         },
         {
-          "row": 5,
+          "ROW": 5,
           "PROD_FORM_CODE_PK": 2,
           "QTY_MIN": 51,
           "QTY_MAX": 100,
@@ -95,7 +95,7 @@
           "DISC_MAX": 10
         },
         {
-          "row": 6,
+          "ROW": 6,
           "PROD_FORM_CODE_PK": 2,
           "QTY_MIN": 101,
           "QTY_MAX": 500,

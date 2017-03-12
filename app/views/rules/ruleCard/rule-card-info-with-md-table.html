@@ -22,7 +22,11 @@
 -->
     <tbody md-body ng-show="rule.ruleCode=='RNG'">
       <tr md-row md-select="canvass" md-select-id="canvass.row" md-auto-select ng-repeat="canvass in rule.rows">
-        <td md-cell>{{canvass.row}}</td>
+        <td md-cell ng-repeat="column in rule.columns">
+           {{canvass.ROW}} - {{column.code}}
+        </td>
+<!--
+        <td md-cell>{{canvass.ROW}}</td>
         <td md-cell>
           <md-select ng-model="canvass.PROD_FORM_CODE_PK" placeholder="select an item">
             <md-option ng-value="item.id" ng-repeat="item in rule.PROD_FORM_CODE">{{item.description}}</md-option>
@@ -32,6 +36,7 @@
         <td md-cell>{{canvass.QTY_MAX}}</td>
         <td md-cell>{{canvass.DISC_MIN}}</td>
         <td md-cell>{{canvass.DISC_MAX}}</td>
+-->
       </tr>
       </tbody>
 <!--
