@@ -15,7 +15,7 @@
         {
           "id": 2,
           "code": "PROD_FORM_CODE",
-          "type": "TEXT",
+          "type": "PROD_FORM",
           "description": "Product Form."
         },
         {
@@ -108,6 +108,49 @@
       "id": 2,
       "name":"Package",
       "ruleCode":"PKG",
-      "description":"This Rules define a list of Package."
+      "description":"This Rules define a list of Package.",
+      "orderBy":"row",
+      "columns":[
+        {
+          "id": 1,
+          "code": "ROW",
+          "type": "NUM",
+          "description": "Row num."
+        },
+        {
+          "id": 2,
+          "code": "PKG_CODE",
+          "type": "PKG",
+          "description": "Package code"
+        },
+        {
+          "id": 3,
+          "code": "QTY_MIN",
+          "type": "NUM",
+          "description": "Minimun Qty."
+        }
+      ],
+      "PKG_CODE":[
+        {
+          "id": 1,
+          "description": "Relevant Package"
+        },
+        {
+          "id": 2,
+          "description": "Not Relevant Package"
+        }
+      ],
+      "rows": [
+        {
+          "ROW": 1,
+          "PKG_CODE_PK": 1,
+          "QTY_MIN": 12
+        },
+        {
+          "ROW": 2,
+          "PKG_CODE_PK": 2,
+          "QTY_MIN": 8
+        }
+      ]
   }
 ]
