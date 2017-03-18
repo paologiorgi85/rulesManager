@@ -1,6 +1,112 @@
 [
   {
       "id": 1,
+      "name":"Default",
+      "ruleCode":"DEF",
+      "description":"This Rules define all the default values for each Products.",
+      "orderBy":"row",
+      "columns":[
+        {
+          "id": 1,
+          "code": "ROW",
+          "type": "NUM",
+          "description": "Row num."
+        },
+        {
+          "id": 2,
+          "code": "PROD_FORM_CODE",
+          "type": "PROD_FORM",
+          "description": "Product Form."
+        },
+        {
+          "id": 3,
+          "code": "PROPOSED",
+          "type": "CHAR",
+          "description": "Proposed"
+        },
+        {
+          "id": 4,
+          "code": "DEFAULT_QTY",
+          "type": "NUM",
+          "description": "Default Qty."
+        },
+        {
+          "id": 5,
+          "code": "DEFAULT_DISC",
+          "type": "NUM",
+          "description": "Default Disc."
+        }
+      ],
+      "PROD_FORM_CODE":[
+        {
+          "id": 1,
+          "description": "Fastum gel 50 ml"
+        },
+        {
+          "id": 2,
+          "description": "Enantyum 25 ml"
+        }
+      ],
+      "rows": [
+        {
+          "ROW": 1,
+          "PROD_FORM_CODE_PK": 1,
+          "PROPOSED": "Y",
+          "DEFAULT_QTY": 10,
+          "DEFAULT_DISC": 1
+        },
+        {
+          "ROW": 2,
+          "PROD_FORM_CODE_PK": 2,
+          "PROPOSED": "N",
+          "DEFAULT_QTY": 0,
+          "DEFAULT_DISC": 0
+        }
+      ]
+  },
+  {
+      "id": 2,
+      "name":"Mandatory",
+      "ruleCode":"MAN",
+      "description":"This Rules define all the mandatory Products.",
+      "orderBy":"row",
+      "columns":[
+        {
+          "id": 1,
+          "code": "ROW",
+          "type": "NUM",
+          "description": "Row num."
+        },
+        {
+          "id": 2,
+          "code": "PROD_FORM_CODE",
+          "type": "PROD_FORM",
+          "description": "Product Form."
+        }
+      ],
+      "PROD_FORM_CODE":[
+        {
+          "id": 1,
+          "description": "Fastum gel 50 ml"
+        },
+        {
+          "id": 2,
+          "description": "Enantyum 25 ml"
+        }
+      ],
+      "rows": [
+        {
+          "ROW": 1,
+          "PROD_FORM_CODE_PK": 1
+        },
+        {
+          "ROW": 2,
+          "PROD_FORM_CODE_PK": 2
+        }
+      ]
+  },
+  {
+      "id": 3,
       "name":"Range",
       "ruleCode":"RNG",
       "description":"This Rules define a list of ranges for each Products and manage the values of quantity and discount of each row of the order.",
@@ -105,7 +211,7 @@
       ]
   },
   {
-      "id": 2,
+      "id": 4,
       "name":"Package",
       "ruleCode":"PKG",
       "description":"This Rules define a list of Package.",
